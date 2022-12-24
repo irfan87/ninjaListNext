@@ -1,11 +1,10 @@
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
 	return (
 		<div>
-			<Navbar />
 			<h1>
 				Welcome to the Ninja List, where you can search your favorite ninja here
 			</h1>
@@ -21,6 +20,7 @@ export default function Home() {
 				dignissimos natus mollitia assumenda explicabo iusto voluptatem
 				repudiandae dolore culpa, repellat itaque autem.
 			</p>
+			<Link href="/ninjas">See other ninjas</Link>
 			<Footer />
 		</div>
 	);
