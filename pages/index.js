@@ -1,4 +1,3 @@
-import Footer from "../components/Footer";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
@@ -21,7 +20,6 @@ export default function Home() {
 				repudiandae dolore culpa, repellat itaque autem.
 			</p>
 			<Link href="/ninjas">See other ninjas</Link>
-			<Footer />
 		</div>
 	);
 }
