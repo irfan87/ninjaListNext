@@ -1,11 +1,11 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-// import styles from "../styles/Home.module.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
 	return (
 		<div>
+			<Navbar />
 			<h1>
 				Welcome to the Ninja List, where you can search your favorite ninja here
 			</h1>
@@ -21,6 +21,7 @@ export default function Home() {
 				dignissimos natus mollitia assumenda explicabo iusto voluptatem
 				repudiandae dolore culpa, repellat itaque autem.
 			</p>
+			<Footer />
 		</div>
 	);
 }
