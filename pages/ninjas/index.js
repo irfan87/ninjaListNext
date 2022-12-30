@@ -22,14 +22,13 @@ const Ninjas = ({ ninjas }) => {
 			<div>
 				<h1>Ninjas List</h1>
 				{ninjas.map((ninja) => (
-					<div key={ninja.id}>
-						<Link
-							className={styles.single}
-							href={`https://jsonplaceholder.typicode.com/users/${ninja.id}`}
-						>
-							<h3>{ninja.name}</h3>
-						</Link>
-					</div>
+					<Link
+						key={ninja.id}
+						className={styles.single}
+						href={`/ninjas/${ninja.id}`}
+					>
+						<h3>{ninja.name}</h3>
+					</Link>
 				))}
 			</div>
 		</>
